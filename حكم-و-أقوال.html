@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حكم وأقوال</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #f8f5f0;
+            --deep-burgundy: #5a1f1f;
+            --warm-gold: #c9a961;
+            --soft-shadow: rgba(90, 31, 31, 0.08);
+            --accent-shadow: rgba(201, 169, 97, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Amiri', serif;
+            background: linear-gradient(135deg, #f8f5f0 0%, #ede8e0 100%);
+            min-height: 100vh;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(90, 31, 31, 0.02) 2px, rgba(90, 31, 31, 0.02) 3px),
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(90, 31, 31, 0.02) 2px, rgba(90, 31, 31, 0.02) 3px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 5rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-family: 'Scheherazade New', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            color: var(--deep-burgundy);
+            margin-bottom: 1rem;
+            letter-spacing: 0.02em;
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            right: 50%;
+            transform: translateX(50%);
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--warm-gold), transparent);
+        }
+
+        .subtitle {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.1rem;
+            color: #8b6f47;
+            font-weight: 300;
+            margin-top: 2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .wisdom-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(201, 169, 97, 0.2);
+            border-radius: 2px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            box-shadow: 
+                0 10px 40px var(--soft-shadow),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeInUp 0.8s ease-out backwards;
+        }
+
+        .wisdom-card:nth-child(1) { animation-delay: 0.1s; }
+        .wisdom-card:nth-child(2) { animation-delay: 0.2s; }
+        .wisdom-card:nth-child(3) { animation-delay: 0.3s; }
+        .wisdom-card:nth-child(4) { animation-delay: 0.4s; }
+        .wisdom-card:nth-child(5) { animation-delay: 0.5s; }
+        .wisdom-card:nth-child(6) { animation-delay: 0.6s; }
+        .wisdom-card:nth-child(7) { animation-delay: 0.7s; }
+        .wisdom-card:nth-child(8) { animation-delay: 0.8s; }
+        .wisdom-card:nth-child(9) { animation-delay: 0.9s; }
+        .wisdom-card:nth-child(10) { animation-delay: 1.0s; }
+
+        .wisdom-card::before {
+            content: '❝';
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            font-family: 'Scheherazade New', serif;
+            font-size: 8rem;
+            color: var(--warm-gold);
+            opacity: 0.15;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .wisdom-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 
+                0 20px 60px var(--soft-shadow),
+                0 0 0 1px var(--warm-gold),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            border-color: var(--warm-gold);
+        }
+
+        .author {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--deep-burgundy);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .author::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--warm-gold), transparent);
+        }
+
+        .quote {
+            font-family: 'Amiri', serif;
+            font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+            line-height: 2.2;
+            color: #3a2a1a;
+            position: relative;
+            padding-right: 1rem;
+        }
+
+        .decorative-line {
+            width: 60px;
+            height: 2px;
+            background: var(--warm-gold);
+            margin: 4rem auto;
+            position: relative;
+            opacity: 0.6;
+        }
+
+        .decorative-line::before,
+        .decorative-line::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--warm-gold);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .decorative-line::before {
+            right: -15px;
+        }
+
+        .decorative-line::after {
+            left: -15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(201, 169, 97, 0.3);
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        footer p {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.9rem;
+            color: #8b6f47;
+            font-weight: 300;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 2rem 1rem;
+            }
+
+            .wisdom-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .wisdom-card::before {
+                font-size: 5rem;
+                top: 0.5rem;
+                right: 1rem;
+            }
+
+            h1 {
+                margin-bottom: 0.5rem;
+            }
+
+            .quote {
+                font-size: 1.2rem;
+                line-height: 2;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 1cm;
+            }
+
+            body::before {
+                display: none;
+            }
+
+            .wisdom-card {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>حكم وأقوال</h1>
+            <p class="subtitle">كلمات خالدة من عقول نيّرة</p>
+        </header>
+
+        <main>
+            <article class="wisdom-card">
+                <div class="author">ابن خلدون</div>
+                <p class="quote">المغلوب مولع أبدا بتقليد الغالب في شعاره وزيه ونحلته وسائر أحواله وعوائده</p>
+            </article>
+
+            <div class="decorative-line"></div>
+
+            <article class="wisdom-card">
+                <div class="author">سيد قطب</div>
+                <p class="quote">إنهم يريدون إسلاميا غربيا، يستفتى في نواقض الوضوء ولكنه لا يستفتى في أوضاع المسلمين السياسية والاقتصادية والاجتماعية والمالية</p>
+            </article>
+
+            <div class="decorative-line"></div>
+
+            <article class="wisdom-card">
+                <div class="author">سيد قطب</div>
+                <p class="quote">إذا أريد للإسلام ان يعمل فلا بد للإسلام أن يحكم. فما جاء هذا الدين لينزوي في الصوامع والمعابد</p>
+            </article>
+
+            <div class="decorative-line"></div>
+
+            <article class="wisdom-card">
+                <div class="author">محمد إلهامي</div>
+                <p class="quote">أصبح المسلمون اليوم كلأيتام على موائد اللئام</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>مجموعة مختارة من الحكم والأقوال</p>
+        </footer>
+    </div>
+</body>
+</html>

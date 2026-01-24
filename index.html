@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معركة الإسلام - تقارير تحليلية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Amiri', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a472a 0%, #27ae60 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .intro {
+            background: #f8fffe;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-right: 5px solid #27ae60;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #16a085 0%, #27ae60 100%);
+            color: white;
+        }
+
+        thead th {
+            padding: 20px 15px;
+            text-align: right;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.2s ease;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f9f7;
+        }
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        tbody td {
+            padding: 18px 15px;
+            vertical-align: top;
+        }
+
+        .report-name {
+            font-weight: bold;
+            color: #1a472a;
+            font-size: 1.1em;
+        }
+
+        .report-name a {
+            color: #16a085;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .report-name a:hover {
+            color: #27ae60;
+            text-decoration: underline;
+        }
+
+        .report-description {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+
+        .youtube-link a {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.2s ease;
+        }
+
+        .youtube-link a:hover {
+            background: #cc0000;
+        }
+
+        .youtube-link a::before {
+            content: "▶ ";
+        }
+
+        .no-link {
+            color: #999;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.95em;
+        }
+
+        footer a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            thead th {
+                padding: 15px 10px;
+                font-size: 1em;
+            }
+
+            tbody td {
+                padding: 12px 10px;
+                font-size: 0.9em;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>معركة الإسلام</h1>
+            <p>مجموعة تقارير تحليلية شاملة حول الفكر الإسلامي المعاصر</p>
+        </header>
+
+        <div class="content">
+            <div class="intro">
+                <strong>مرحباً بك في مكتبة التقارير التحليلية</strong><br>
+                هذه المجموعة تحتوي على تحليلات معمقة لمحاضرات وحوارات مهمة حول القضايا السياسية والفكرية والاجتماعية في
+                الإسلام. كل تقرير يتضمن ملخصاً تحليلياً، مصطلحات رئيسية، ومقارنات موضوعية.
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 25%">اسم التقرير</th>
+                            <th style="width: 50%">وصف التقرير</th>
+                            <th style="width: 25%">رابط اليوتيوب</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تحليل_الإسلام_السياسي.html">الإسلام السياسي والدولة الحديثة</a>
+                            </td>
+                            <td class="report-description">
+                                حوار مع الأستاذ محمد الهامي حول الإسلاميين ومستقبل الإسلام السياسي في المنطقة العربية،
+                                يناقش تعريف الإسلاميين، أهدافهم، وموقعهم في المشهد السياسي المعاصر.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تحليل_حوار_اليمين_واليسار.html">حوار اليمين واليسار</a>
+                            </td>
+                            <td class="report-description">
+                                تحليل معمق لحوار بين تيارات اليمين واليسار في السياق الإسلامي، يستكشف الأسس الفكرية
+                                والفلسفية لكل تيار وموقفهم من القضايا المعاصرة.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="القيم-الغربية.html">الحرية بين الفكر الغربي والإسلامي</a>
+                            </td>
+                            <td class="report-description">
+                                دراسة تحليلية للقيم الغربية وأصولها الفلسفية، مع مقارنة موضوعية بالقيم الإسلامية وتأثير
+                                التبادل الحضاري بين الشرق والغرب.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تحليل_محاضرة_الحداثة.html">محاضرة الحداثة</a>
+                            </td>
+                            <td class="report-description">
+                                تحليل شامل لمفهوم الحداثة وتطبيقاته في السياق الإسلامي، يناقش التحديات والفرص التي
+                                تفرضها الحداثة على المجتمعات الإسلامية المعاصرة.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="جدل-الهوية.html">جدل الهوية</a>
+                            </td>
+                            <td class="report-description">
+                                استكشاف لإشكاليات الهوية في العالم الإسلامي المعاصر، بين الأصالة والمعاصرة، والتراث
+                                والتجديد، والخصوصية والعالمية.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تدبر-القرآن.html">تدبر القرآن</a>
+                            </td>
+                            <td class="report-description">
+                                محاضرة حول منهجية التدبر في القرآن الكريم، وكيفية جعل القرآن مصدراً مركزياً في صناعة
+                                التصورات والأحكام في جميع جوانب الحياة.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="الثورة-العلمية.html">الثورة العلمية</a>
+                            </td>
+                            <td class="report-description">
+                                تحليل تاريخي للثورة العلمية وأثرها على الحضارة الإنسانية، مع دراسة دور المسلمين في تطور
+                                العلوم ومساهماتهم في النهضة الأوروبية.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تحليل_سنن_الانتقال_من_الذل_إلى_المجد.html">سنن الانتقال من الذل إلى المجد</a>
+                            </td>
+                            <td class="report-description">
+                                محاضرة للشيخ محمد إلهامي تتناول قصة طالوت وجالوت واستخلاص سنن الانتصار والتغيير، مع
+                                تطبيقات عملية على واقع الأمة الإسلامية المعاصرة.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="التفوق_السياسي_للدولة_الإسلامية.html">التفوق السياسي للدولة الإسلامية</a>
+                            </td>
+                            <td class="report-description">
+                                دراسة تحليلية لنظام الحكم في الدولة الإسلامية التاريخية، وعناصر تفوقها السياسي والإداري
+                                مقارنة بالأنظمة المعاصرة.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تحليل_الديمقراطية_والعلمانية_في_الإسلام.html">الديمقراطية والعلمانية في
+                                    الإسلام</a>
+                            </td>
+                            <td class="report-description">
+                                حوار مع د. محمد المختار الشنقيطي حول العلاقة بين الدين والسياسة والدولة، يفند الافتراضات
+                                الشائعة حول الديمقراطية والعلمانية في السياق الإسلامي.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="حملة-صليبية-جديدة.html">إسرائيل كحملة صليبية جديدة</a>
+                            </td>
+                            <td class="report-description">
+                                حوار مع د. محمد المختار الشنقيطي حول أوجه الشبه بين الحملات الصليبية القديمة والحركة الصهيونية المعاصرة، مع تحليل تاريخي مقارن.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="النظام-الاجتماعي-في-الإسلام.html">النظام الاجتماعي في الإسلام</a>
+                            </td>
+                            <td class="report-description">
+                                محاضرة للأستاذ محمد إلهامي توضح طبيعة النظام الاجتماعي الإسلامي وكيف يختلف جوهرياً عن
+                                الأنظمة الغربية، مع تفنيد الشبهات حول الاستبداد.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="هل-يتطلب-الإسلام-دولة.html">هل يتطلب الإسلام دولة</a>
+                            </td>
+                            <td class="report-description">
+                                بحث في العلاقة بين الإسلام والدولة، هل الدولة ضرورة شرعية أم وسيلة عملية، مع استعراض
+                                الأدلة الشرعية والتاريخية.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تحليل_الفكر_السياسي_الإسلامي.html">الفكر السياسي الإسلامي</a>
+                            </td>
+                            <td class="report-description">
+                                دراسة معمقة للفكر السياسي الإسلامي وتطوره عبر التاريخ، مع تحليل المفاهيم الأساسية
+                                كالشورى، البيعة، والعدل في النظام السياسي الإسلامي.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="لماذا-نرفض-العلمانية.html">لماذا نرفض العلمانية</a>
+                            </td>
+                            <td class="report-description">
+                                تحليل نقدي للعلمانية من منظور إسلامي، يناقش الأسباب الفكرية والعملية لرفض العلمانية
+                                كنموذج للحكم في المجتمعات الإسلامية.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تحليل_مظاهر_العلمانية_في_المجتمعات_الإسلامية.html">مظاهر العلمانية في المجتمعات
+                                    الإسلامية</a>
+                            </td>
+                            <td class="report-description">
+                                رصد وتحليل لمظاهر العلمانية المختلفة في المجتمعات الإسلامية المعاصرة، وكيفية تعاملها مع
+                                الدين في المجال العام.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="النموذج_التأسيسي_للإسلام_تحليل_شامل.html">النموذج التأسيسي للإسلام</a>
+                            </td>
+                            <td class="report-description">
+                                تحليل شامل للنموذج التأسيسي للإسلام وخصائصه المميزة، مع مقارنة بالنماذج التأسيسية للأديان الأخرى.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="تقرير-لماذا-تفوق-الغرب-وتراجعنا.html">لماذا تفوق الغرب وتراجعنا</a>
+                            </td>
+                            <td class="report-description">
+                                دراسة تحليلية لأسباب تفوق الغرب وتراجع العالم الإسلامي، مع استعراض العوامل التاريخية والثقافية والسياسية.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="الفكر-الاستراتيجي-الصيني.html">الفكر الاستراتيجي الصيني وكتاب فن الحرب</a>
+                            </td>
+                            <td class="report-description">
+                                تحليل معمق للفكر الاستراتيجي الصيني من خلال كتاب فن الحرب لسون تزو، مع استخلاص الدروس والمبادئ الاستراتيجية القابلة للتطبيق في السياق المعاصر.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="القدس-والبيئة-الاستراتيجية.html">القدس في الجغرافيا الإسلامية</a>
+                            </td>
+                            <td class="report-description">
+                                حوار مع د. محمد المختار الشنقيطي حول مكانة القدس في الجغرافيا الإسلامية والبيئة الاستراتيجية المحيطة بها، مع تحليل الأبعاد التاريخية والسياسية.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="report-name">
+                                <a href="حكم-و-أقوال.html">حكم وأقوال</a>
+                            </td>
+                            <td class="report-description">
+                                مجموعة مختارة من الحكم والأقوال المأثورة من التراث الإسلامي والفكر المعاصر.
+                            </td>
+                            <td class="youtube-link">
+                                <span class="no-link">لم يُضاف بعد</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>تم إنشاء هذه التقارير باستخدام مهارات Claude AI</p>
+        </footer>
+    </div>
+</body>
+
+</html>
